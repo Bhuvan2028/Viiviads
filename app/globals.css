@@ -1,0 +1,191 @@
+@import "tailwindcss";
+
+@theme {
+  --color-clay-canvas: #fffaf0;
+  --color-clay-surface-soft: #faf5e8;
+  --color-clay-surface-card: #f5f0e0;
+  --color-clay-surface-strong: #ebe6d6;
+  --color-clay-surface-dark: #0a1a1a;
+  --color-clay-surface-dark-elevated: #1a2a2a;
+
+  --color-clay-primary: #0a0a0a;
+  --color-clay-primary-active: #1f1f1f;
+  --color-clay-primary-disabled: #e5e5e5;
+  --color-clay-ink: #0a0a0a;
+  --color-clay-body-strong: #1a1a1a;
+  --color-clay-body: #3a3a3a;
+  --color-clay-muted: #6a6a6a;
+  --color-clay-muted-soft: #9a9a9a;
+  --color-clay-hairline: #e5e5e5;
+  --color-clay-hairline-soft: #f0f0f0;
+
+  /* The 6 Signature Saturated Feature Card Colors */
+  --color-clay-brand-pink: #ff4d8b;
+  --color-clay-brand-teal: #1a3a3a;
+  --color-clay-brand-lavender: #b8a4ed;
+  --color-clay-brand-peach: #ffb084;
+  --color-clay-brand-ochre: #e8b94a;
+  --color-clay-brand-mint: #a4d4c5;
+  --color-clay-brand-coral: #ff6b5a;
+
+  --font-clay-display: var(--font-jakarta), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-clay-body: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+:root {
+  --canvas: #fffaf0;
+  --ink: #0a0a0a;
+}
+
+html {
+  background-color: #fffaf0;
+  color: #0a0a0a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-clay-body), sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #3a3a3a;
+  background-color: #fffaf0;
+  overflow-x: hidden;
+}
+
+/* Clay Display Typography (Weight 500 with negative tracking per DESIGN.md) */
+.clay-display-xl {
+  font-family: var(--font-clay-display), sans-serif;
+  font-size: clamp(38px, 6vw, 72px);
+  font-weight: 500;
+  line-height: 1.0;
+  letter-spacing: -2.5px;
+  color: #0a0a0a;
+}
+
+.clay-display-lg {
+  font-family: var(--font-clay-display), sans-serif;
+  font-size: clamp(32px, 4.5vw, 56px);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -2px;
+  color: #0a0a0a;
+}
+
+.clay-display-md {
+  font-family: var(--font-clay-display), sans-serif;
+  font-size: clamp(26px, 3.5vw, 40px);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: #0a0a0a;
+}
+
+.clay-display-sm {
+  font-family: var(--font-clay-display), sans-serif;
+  font-size: clamp(22px, 2.8vw, 32px);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+  color: #0a0a0a;
+}
+
+.clay-title-lg {
+  font-family: var(--font-clay-display), sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.3px;
+  color: #0a0a0a;
+}
+
+.clay-title-md {
+  font-family: var(--font-clay-display), sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: #0a0a0a;
+}
+
+/* Clay Button Styles per DESIGN.md */
+.clay-button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.clay-button-primary:hover {
+  background-color: #1f1f1f;
+}
+
+.clay-button-primary:active {
+  transform: scale(0.98);
+}
+
+.clay-button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background-color: #fffaf0;
+  border: 1px solid #e5e5e5;
+  color: #0a0a0a;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.clay-button-secondary:hover {
+  background-color: #faf5e8;
+  border-color: #d5d0c0;
+}
+
+.clay-button-on-color {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: #0a0a0a;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.clay-button-on-color:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Warm Cream Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fffaf0;
+}
+::-webkit-scrollbar-thumb {
+  background: #ebe6d6;
+  border-radius: 9999px;
+  border: 2px solid #fffaf0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d5d0c0;
+}

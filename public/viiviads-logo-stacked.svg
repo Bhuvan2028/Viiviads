@@ -1,0 +1,28 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Geometric Emblem -->
+  <g transform="translate(20, 10)">
+    <!-- Bar 1 (Far Left): Deep Indigo #382C66 -->
+    <path d="M40 48L58 30V122L40 140V48Z" fill="#382C66"/>
+
+    <!-- Bar 2: Dark Violet #504282 with diagonal slash -->
+    <path d="M64 45L80 61V84L64 100V45Z" fill="#504282"/>
+    <path d="M64 116L80 100V140H64V116Z" fill="#504282"/>
+
+    <!-- Top Inverted Chevron / Triangle in Center -->
+    <polygon points="80,30 120,30 100,52" fill="#7564AB"/>
+
+    <!-- Bar 3 (Center): Light Purple #9585D0 with diagonal slash -->
+    <path d="M86 94L100 80V140H86V94Z" fill="#9585D0"/>
+
+    <!-- Bar 4 (Center Right): Medium Violet #7564AB -->
+    <path d="M106 74L122 58V140H106V74Z" fill="#7564AB"/>
+
+    <!-- Bar 5 (Far Right): Vibrant Violet #5B4AB5 -->
+    <path d="M128 30L146 48V140H128V30Z" fill="#5B4AB5"/>
+  </g>
+
+  <!-- Typography below: VIIVIADS in Monospace tracking -->
+  <text x="120" y="202" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', 'Roboto Mono', 'Courier New', monospace" font-size="21" font-weight="700" letter-spacing="0.22em" fill="#0A0A0A">
+    VIIVIADS
+  </text>
+</svg>
