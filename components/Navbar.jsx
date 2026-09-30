@@ -6,7 +6,6 @@ import Link from "next/link";
 import {
   Menu,
   X,
-  Phone,
   ChevronDown,
   ArrowRight,
   Smartphone,
@@ -15,7 +14,6 @@ import {
   ShieldCheck,
   Crosshair,
   BarChart3,
-  MessageCircle,
   TrendingUp,
 } from "lucide-react";
 
@@ -113,8 +111,8 @@ export default function Navbar() {
       color: "text-[#e8b94a]",
     },
     {
-      name: "ROAS & Growth Estimator",
-      desc: "Simulate live budget, installs & ROI return",
+      name: "Traffic & CVR Estimator",
+      desc: "Simulate budget, CPC costs, clicks & conversion rates",
       href: "#estimator",
       icon: TrendingUp,
       color: "text-[#22c55e]",
@@ -256,15 +254,6 @@ export default function Navbar() {
 
           {/* Right Action Cluster */}
           <div className="hidden sm:flex items-center gap-3 shrink-0">
-            <a
-              href="tel:+919067677624"
-              className="hidden xl:flex items-center gap-1.5 text-[13px] font-medium text-[#6a6a6a] hover:text-[#0a0a0a] transition-colors px-2 py-1 rounded-lg hover:bg-[#faf5e8]"
-              title="Call VIIVIADS Growth Desk"
-            >
-              <Phone className="w-3.5 h-3.5 text-[#ff4d8b]" />
-              <span className="font-mono">+91 9067677624</span>
-            </a>
-
             <Link
               href="#advertisers"
               className="clay-button-primary !h-[38px] !px-3.5 !text-[13px] whitespace-nowrap"
@@ -343,7 +332,7 @@ export default function Navbar() {
               </div>
               {[
                 { name: "Services & Solutions", href: "#services" },
-                { name: "ROAS & Growth Estimator", href: "#estimator" },
+                { name: "Traffic & CVR Estimator", href: "#estimator" },
                 { name: "How It Works", href: "#how-it-works" },
                 { name: "App Verticals", href: "#verticals" },
                 { name: "Pricing Models", href: "#pricing" },
@@ -363,29 +352,9 @@ export default function Navbar() {
               ))}
             </div>
 
-            {/* Direct Contact & Action Bar */}
-            <div className="space-y-3 pt-3 border-t border-[#ebe6d6]">
-              <div className="grid grid-cols-2 gap-2">
-                <a
-                  href="tel:+919067677624"
-                  className="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-[12px] bg-white border border-[#e5e5e5] text-xs font-semibold text-[#0a0a0a]"
-                >
-                  <Phone className="w-3.5 h-3.5 text-[#ff4d8b]" />
-                  <span>Call Us</span>
-                </a>
-
-                <a
-                  href="https://wa.me/919067677624"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-[12px] bg-[#25D366] text-white text-xs font-semibold"
-                >
-                  <MessageCircle className="w-3.5 h-3.5" />
-                  <span>WhatsApp</span>
-                </a>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
+            {/* Action Bar */}
+            <div className="pt-3 border-t border-[#ebe6d6]">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 <Link
                   href="#advertisers"
                   onClick={() => setMobileMenuOpen(false)}

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowRight, CheckCircle2, Phone, Mail, MapPin, MessageCircle, Copy, Check } from "lucide-react";
+import { ArrowRight, CheckCircle2, Mail, MapPin, Copy, Check } from "lucide-react";
 
 function LinkedInIcon({ className = "w-4 h-4" }) {
   return (
@@ -21,14 +21,7 @@ export default function ContactSection() {
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [copiedPhone, setCopiedPhone] = useState(false);
   const [copiedEmail, setCopiedEmail] = useState(false);
-
-  const copyPhone = () => {
-    navigator.clipboard?.writeText("+919067677624");
-    setCopiedPhone(true);
-    setTimeout(() => setCopiedPhone(false), 2000);
-  };
 
   const copyEmail = () => {
     navigator.clipboard?.writeText("hello@viiviads.com");
@@ -65,32 +58,6 @@ export default function ContactSection() {
 
               {/* Direct Info Cards with 1-Click Copy Interaction */}
               <div className="space-y-3.5 pt-2">
-                <div className="p-4 rounded-[16px] bg-white border border-[#e5e5e5] flex items-center justify-between group">
-                  <div>
-                    <div className="text-[11px] font-semibold text-[#6a6a6a] uppercase tracking-wider mb-0.5">
-                      Direct Line &amp; WhatsApp
-                    </div>
-                    <a
-                      href="tel:+919067677624"
-                      className="text-[18px] font-bold text-[#0a0a0a] hover:text-[#ff4d8b] transition-colors font-mono"
-                    >
-                      +91 9067677624
-                    </a>
-                  </div>
-                  <button
-                    type="button"
-                    onClick={copyPhone}
-                    className="p-2 rounded-lg bg-[#faf5e8] hover:bg-[#f5f0e0] text-[#0a0a0a] transition-all"
-                    title="Copy phone number"
-                    aria-label="Copy phone number"
-                  >
-                    {copiedPhone ? (
-                      <Check className="w-4 h-4 text-[#22c55e]" />
-                    ) : (
-                      <Copy className="w-4 h-4 text-[#6a6a6a]" />
-                    )}
-                  </button>
-                </div>
 
                 <div className="p-4 rounded-[16px] bg-white border border-[#e5e5e5] flex items-center justify-between group">
                   <div>
@@ -134,16 +101,6 @@ export default function ContactSection() {
 
               {/* Action Buttons */}
               <div className="flex flex-wrap gap-3 pt-1">
-                <a
-                  href="https://wa.me/919067677624"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-[12px] bg-[#25D366] text-white text-[13px] font-semibold hover:bg-[#20ba5a] transition-all shadow-xs"
-                >
-                  <MessageCircle className="w-4 h-4" />
-                  <span>WhatsApp Chat</span>
-                </a>
-
                 <a
                   href="https://www.linkedin.com/company/viiviads"
                   target="_blank"
@@ -237,14 +194,13 @@ export default function ContactSection() {
 
                       <div>
                         <label className="block text-[13px] font-medium text-[#0a0a0a] mb-1">
-                          Phone / WhatsApp *
+                          Phone Number (Optional)
                         </label>
                         <input
                           type="tel"
-                          required
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                          placeholder="+91 90676 77624"
+                          placeholder="+1 (555) 000-0000"
                           className="w-full h-[44px] px-4 rounded-[12px] bg-[#fffaf0] border border-[#e5e5e5] text-[#0a0a0a] text-[15px] focus:outline-none focus:border-[#0a0a0a]"
                         />
                       </div>

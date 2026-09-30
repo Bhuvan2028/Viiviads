@@ -30,7 +30,7 @@ export default function Footer() {
               VIIVIADS is a mobile-first ad partner helping brands grow through in-app campaigns, with smart targeting, quality traffic and performance you can measure.
             </p>
             <div className="text-[13px] text-[#0a0a0a] font-medium">
-              Mumbai · Founded 2024 · Direct Support: +91 9067677624
+              Founded 2024 · Mobile-First Performance Network
             </div>
           </div>
 
@@ -111,12 +111,7 @@ export default function Footer() {
             </h4>
             <div className="space-y-2 text-[14px] text-[#6a6a6a]">
               <div>
-                <a href="tel:+919067677624" className="text-[#0a0a0a] font-semibold hover:underline">
-                  +91 9067677624
-                </a>
-              </div>
-              <div>
-                <a href="mailto:hello@viiviads.com" className="hover:text-[#0a0a0a] transition-colors">
+                <a href="mailto:hello@viiviads.com" className="text-[#0a0a0a] font-semibold hover:underline">
                   hello@viiviads.com
                 </a>
               </div>

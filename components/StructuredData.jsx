@@ -12,7 +12,6 @@ export default function StructuredData() {
         "description":
           "VIIVIADS is a mobile-first ad partner helping brands grow through in-app campaigns, with smart targeting, quality traffic and performance you can measure.",
         "foundingDate": "2024",
-        "telephone": "+91-9067677624",
         "email": "hello@viiviads.com",
         "address": {
           "@type": "PostalAddress",
@@ -45,7 +44,6 @@ export default function StructuredData() {
         "parentOrganization": {
           "@id": "https://www.viiviads.com/#organization"
         },
-        "telephone": "+91-9067677624",
         "email": "hello@viiviads.com",
         "areaServed": "Worldwide",
         "priceRange": "$$$"

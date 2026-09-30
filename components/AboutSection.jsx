@@ -191,13 +191,13 @@ export default function AboutSection() {
                 Who We Are
               </h3>
               <p className="text-sm font-semibold text-[#0a0a0a]">
-                Founded 2024 · Mumbai, India
+                Founded 2024 · Global Reach
               </p>
             </div>
 
             <div className="lg:col-span-8 space-y-4 text-[16px] text-[#3a3a3a] leading-relaxed">
               <p>
-                VIIVIADS is an advertising services company focused on mobile. Founded in 2024 and based in Mumbai, we work as the link between brands that want growth and publishers that own quality audiences. Our team blends technology and strategy to deliver campaigns that perform across all app verticals.
+                VIIVIADS is an advertising services company focused on mobile. Founded in 2024, we work as the link between brands that want growth and publishers that own quality audiences. Our team blends technology and strategy to deliver campaigns that perform across all app verticals.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">

@@ -46,12 +46,12 @@ export default function ServicesSection() {
                   <span className="font-bold">&lt; 10ms</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>AUCTIONS PER SECOND:</span>
-                  <span className="font-bold">45,000+ QPS</span>
+                  <span>USD PER BID:</span>
+                  <span className="font-bold">$0.002 – $0.015</span>
                 </div>
                 <div className="flex justify-between">
                   <span>NATIVE AD INTEGRATION:</span>
-                  <span className="font-bold">Zero Frame Drop</span>
+                  <span className="font-bold">IAB MRAID 3.0 &amp; VAST</span>
                 </div>
               </div>
             </div>
@@ -160,10 +160,10 @@ export default function ServicesSection() {
             </div>
             <h3 className="clay-title-lg text-[#0a0a0a]">Tracking &amp; Transparent Reporting</h3>
             <p className="text-[15px] text-[#3a3a3a] leading-relaxed">
-              Clear reporting on impressions, clicks, conversions, cost and ROI. Fully compatible with major MMPs (AppsFlyer, Adjust, Kochava, Singular) or custom server postbacks.
+              Clear reporting on impressions, clicks, conversions, cost and ROI. Fully compatible with major MMPs (AppsFlyer, Adjust, Branch, Kochava, Singular) or custom server postbacks.
             </p>
             <div className="flex flex-wrap gap-2 pt-2">
-              {["AppsFlyer", "Adjust", "Kochava", "Singular", "Direct S2S Postbacks"].map((mmp) => (
+              {["AppsFlyer", "Adjust", "Branch", "Kochava", "Singular", "Direct S2S Postbacks"].map((mmp) => (
                 <span key={mmp} className="px-3 py-1 rounded-full bg-[#f5f0e0] text-[#0a0a0a] text-[12px] font-medium border border-[#ebe6d6]">
                   {mmp}
                 </span>

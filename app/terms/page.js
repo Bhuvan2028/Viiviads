@@ -84,7 +84,6 @@ export default function TermsAndConditions() {
             <div className="p-4 rounded-xl bg-[#f4f2f9] border border-[#e6e2f0] text-xs font-mono space-y-1">
               <div>VIIVIADS Legal Affairs</div>
               <div>Email: hello@viiviads.com</div>
-              <div>Phone: +91 9067677624</div>
               <div>Address: Mumbai, Maharashtra, 401208, India</div>
             </div>
           </section>

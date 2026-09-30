@@ -37,7 +37,7 @@ export default function FaqSection() {
     },
     {
       q: "How do I track results?",
-      a: "Through real-time tracking dashboards and regular reports with MMP integrations (AppsFlyer, Adjust, Kochava, Singular).",
+      a: "Through real-time tracking dashboards and regular reports with MMP integrations (AppsFlyer, Adjust, Branch, Kochava, Singular).",
     },
     {
       q: "How do I get started?",

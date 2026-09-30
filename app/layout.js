@@ -2,7 +2,6 @@ import { Plus_Jakarta_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import StructuredData from "@/components/StructuredData";
-import WhatsAppButton from "@/components/WhatsAppButton";
 import CookieConsent from "@/components/CookieConsent";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -106,7 +105,6 @@ export default function RootLayout({ children }) {
       </head>
       <body className="min-h-screen bg-[#fffaf0] text-[#0a0a0a] font-sans antialiased selection:bg-[#ff4d8b] selection:text-white">
         <SmoothScroll>{children}</SmoothScroll>
-        <WhatsAppButton />
         <CookieConsent />
       </body>
     </html>

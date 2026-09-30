@@ -26,8 +26,8 @@ export default function VerticalsSection() {
       desc: "Interactive playables, rewarded video units, and mid-core campaigns optimized for Day 30 retention and in-app purchases.",
       icon: Gamepad2,
       tag: "Playables & Video",
-      cpi: "$0.80 - $2.40",
-      targetKpi: "D30 Retention & IAP",
+      cpi: "$0.90 - $2.80",
+      targetKpi: "D30 Retention & IAP Conversion",
       bestFormat: "Playable Demo + Rewarded Video",
     },
     {
@@ -35,8 +35,8 @@ export default function VerticalsSection() {
       desc: "Neobanks, wallets, and financial services scaling verified KYC completions, account openings, and first-time deposits.",
       icon: Landmark,
       tag: "CPA / KYC Focused",
-      cpi: "$2.50 - $6.50",
-      targetKpi: "KYC Account Activation",
+      cpi: "$2.50 - $6.00",
+      targetKpi: "Verified KYC & First Deposit",
       bestFormat: "Contextual Native + In-Feed",
     },
     {
@@ -44,8 +44,8 @@ export default function VerticalsSection() {
       desc: "D2C shopping apps, marketplaces, and quick-commerce platforms driving first orders, app reinstalls, and repeat purchases.",
       icon: ShoppingBag,
       tag: "ROAS & CPS",
-      cpi: "$1.20 - $3.10",
-      targetKpi: "First Order & Cart Size",
+      cpi: "$1.50 - $4.20",
+      targetKpi: "First Order & Basket ROAS",
       bestFormat: "Dynamic Catalog & Interstitials",
     },
     {
@@ -53,8 +53,8 @@ export default function VerticalsSection() {
       desc: "Cleaners, VPNs, scanner tools, and keyboard apps scaling massive international user acquisition at lean, predictable CPIs.",
       icon: Wrench,
       tag: "High Volume CPI",
-      cpi: "$0.40 - $1.20",
-      targetKpi: "Low CAC & Volume Scale",
+      cpi: "$0.45 - $1.35",
+      targetKpi: "D7 Retention & Volume Scale",
       bestFormat: "High-Frequency Interstitials",
     },
     {
@@ -62,8 +62,8 @@ export default function VerticalsSection() {
       desc: "OTT video services, audio streaming, and comic apps acquiring engaged free-trial subscribers and long-term active listeners.",
       icon: Film,
       tag: "Subscription Scale",
-      cpi: "$1.10 - $2.80",
-      targetKpi: "Free Trial to Paid Sub",
+      cpi: "$1.20 - $3.40",
+      targetKpi: "Free Trial to Paid Subscription",
       bestFormat: "Rich Media Video Trailers",
     },
     {
@@ -71,8 +71,8 @@ export default function VerticalsSection() {
       desc: "Social networks, live audio spaces, and community platforms scaling genuine human interactions and daily active usage.",
       icon: MessageCircleHeart,
       tag: "Active Engagements",
-      cpi: "$0.70 - $1.90",
-      targetKpi: "Profile Setup & 7D Retention",
+      cpi: "$0.80 - $2.30",
+      targetKpi: "Profile Activation & 7D Retention",
       bestFormat: "Native Feed & Social Story Ads",
     },
     {
@@ -80,8 +80,8 @@ export default function VerticalsSection() {
       desc: "Language learning, test preparation, and skill-building applications converting student sign-ups into paid course enrollment.",
       icon: GraduationCap,
       tag: "Lead & Enrollment",
-      cpi: "$1.50 - $4.00",
-      targetKpi: "Trial Lesson Completion",
+      cpi: "$1.80 - $4.60",
+      targetKpi: "Trial Lesson & Course Purchase",
       bestFormat: "Micro-Lesson Interactive Units",
     },
     {
@@ -89,8 +89,8 @@ export default function VerticalsSection() {
       desc: "Workout companions, meditation guides, and nutrition trackers growing active recurring monthly subscribers across tier-1 GEOs.",
       icon: HeartPulse,
       tag: "Subscription Lift",
-      cpi: "$1.40 - $3.60",
-      targetKpi: "Annual Subscription Trial",
+      cpi: "$1.60 - $4.40",
+      targetKpi: "Annual Plan Free-Trial Start",
       bestFormat: "Motivation Video & Carousel",
     },
     {
@@ -98,8 +98,8 @@ export default function VerticalsSection() {
       desc: "Flight aggregators, hotel booking apps, and local mobility platforms driving in-app reservations and seasonal booking peaks.",
       icon: Compass,
       tag: "Booking CPA",
-      cpi: "$1.80 - $4.50",
-      targetKpi: "Confirmed Reservation",
+      cpi: "$1.90 - $4.80",
+      targetKpi: "In-App Booking Confirmation",
       bestFormat: "Destination Native Interstitial",
     },
   ];
@@ -112,14 +112,15 @@ export default function VerticalsSection() {
       <div className="max-w-[1280px] mx-auto space-y-14">
         {/* Section Header */}
         <div className="max-w-2xl">
-          <div className="text-[12px] font-semibold text-[#6a6a6a] uppercase tracking-[1.5px] mb-2">
-            APP VERTICALS
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#f5f0e0] border border-[#ebe6d6] text-[12px] font-semibold text-[#0a0a0a] uppercase tracking-[1.5px] mb-3">
+            <span>APP VERTICALS</span>
+            <span className="text-[#6a6a6a] font-normal">· Real CPI Benchmarks</span>
           </div>
           <h2 className="clay-display-lg text-[#0a0a0a] mb-4">
             Verticals we work with.
           </h2>
           <p className="text-[16px] text-[#3a3a3a] leading-relaxed">
-            Every category has unique acquisition economics, conversion curves, and user lifecycles. Click any category below to preview performance metrics.
+            Every category has unique acquisition economics, conversion curves, and user lifecycles. Benchmark metrics calibrated using cross-industry performance reports (AppsFlyer &amp; Adjust).
           </p>
         </div>
 

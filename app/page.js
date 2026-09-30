@@ -38,7 +38,7 @@ export default function Home() {
         {/* 7. For Publishers (Benefits & Dedicated Publisher Application Form) */}
         <PublishersSection />
 
-        {/* 8. Interactive Growth & ROAS Estimator (Live budget slider & benchmarks) */}
+        {/* 8. Interactive Traffic, CPC & CVR Estimator (Live budget slider & approximate benchmarks) */}
         <RoiEstimator />
 
         {/* 9. Verticals We Work With (Interactive Vertical Inspector & Compliance Notice) */}

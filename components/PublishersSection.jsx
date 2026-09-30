@@ -187,7 +187,7 @@ export default function PublishersSection() {
                         required
                         value={formData.phoneWhatsApp}
                         onChange={(e) => setFormData({ ...formData, phoneWhatsApp: e.target.value })}
-                        placeholder="+91 90676 77624"
+                        placeholder="+1 (555) 000-0000"
                         className="w-full h-[44px] px-4 rounded-[12px] bg-[#fffaf0] border border-[#e5e5e5] text-[#0a0a0a] text-[14px] focus:outline-none focus:border-[#0a0a0a]"
                       />
                     </div>

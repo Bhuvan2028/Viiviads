@@ -71,7 +71,7 @@ export default function PrivacyPolicy() {
           <section className="space-y-2">
             <h2 className="text-lg font-bold text-[#120e24]">4. Data Sharing &amp; Third Parties</h2>
             <p>
-              We do not sell personal information to third parties. We share performance telemetry strictly with certified measurement partners (such as AppsFlyer, Adjust, Kochava, and Singular) for verified attribution and audit purposes.
+              We do not sell personal information to third parties. We share performance telemetry strictly with certified measurement partners (such as AppsFlyer, Adjust, Branch, Kochava, and Singular) for verified attribution and audit purposes.
             </p>
           </section>
 
@@ -90,7 +90,6 @@ export default function PrivacyPolicy() {
             <div className="p-4 rounded-xl bg-[#f4f2f9] border border-[#e6e2f0] text-xs font-mono space-y-1">
               <div>VIIVIADS Privacy Desk</div>
               <div>Email: hello@viiviads.com</div>
-              <div>Phone: +91 9067677624</div>
               <div>Address: Mumbai, Maharashtra, 401208, India</div>
             </div>
           </section>
